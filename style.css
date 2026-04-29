@@ -1,0 +1,138 @@
+body { 
+  font-family: 'Cairo', sans-serif; 
+  background: #0A0A0A;
+  color: #FFFFFF;
+  margin: 0;
+  overflow-x: hidden; 
+}
+
+h1, h2, h3 { 
+  font-weight: 900; 
+  color: #FFFFFF;
+  margin: 0;
+}
+
+p { 
+  font-weight: 400; 
+  color: #888888;
+  line-height: 1.7;
+}
+
+header {
+  height: 70px;
+  background: #141414;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 9999999;
+}
+
+header h2 ,
+.cont h2 , 
+.contain ul li{
+  font-size: 18px;
+  color: #FF2E2E;
+}
+
+header h3 {
+  font-size: 18px;
+  color: #E8E8E8;
+}
+
+header img {
+  width: 45px;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.cont img {
+  width: 250px;
+  height: 250px;
+  border: 3px #FF2E2E solid;
+  border-radius: 50%;
+  box-shadow:  0 0 15px 10px #1E1E1E;
+  animation: moving 1.7s infinite ease-in-out;
+}
+
+@keyframes moving {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  75% {
+    transform: translateY(7px);
+  }
+}
+
+header nav {
+  position: fixed; 
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; 
+  width: 40%;
+  background: #141414;
+  z-index: 10000000;
+  transform: translateX(100%);
+  transition: 1s;
+  opacity: 0;
+}
+
+header nav a {
+  text-decoration: none;
+  display: inline-block;
+  width: 110px;
+  height: 40px;
+  color: #D4D4D4;
+  background: none;
+  border: none;
+  margin-top: 50px;
+}
+
+
+header h3:hover ~ nav , 
+nav:hover {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  width: 110px;
+  height: 40px;
+  color: #FF2E2E;
+  border: 2px solid #FF2E2E;
+  border-radius: 25px;
+  background: #0A0A0A;
+  padding: 3px;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #686868;
+  background: #0B0B0B;
+  }
