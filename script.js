@@ -24,12 +24,7 @@ bydocument.addEventListener('DOMContentLoaded', () => {
       <li>تجربة مستخدم جذابة</li>
     </ul>
   </div>
-  <a href="https://wa.me/+201020929052">تواصل معنا</a>
-  <div class='zero-contact'>
-      <a href='https://was-w.gitgub.io/zero-platform'>تواصل الآن </a>
-      <p class='zero-p-vontact'>تواصل الآن عبر منصة زيرو </p>
-  </div>
-  <hr>
+  <a href="https://wa.me/+2010209290  <hr>
   <footer><h4>AlphaWolfTechnology</h4>جميع الحقوق محفوظة ©<br>2026</footer>
   `;
 
