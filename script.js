@@ -1,4 +1,4 @@
-bydocument.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const body = document.body;
   
   const homeHTML = `
